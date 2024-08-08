@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda tu cita</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <header class="w-100" style="background-color: #F2E5D5; color: #80A6A2;">
+        <div class="container w-100">
+            <div class="justify-content-center align-items-center ">
+                <span class="justify-content-center row m-0">Studio de pestañas</span>
+                    <h1 class="justify-content-center row m-0">Ixtliltic</h1> 
+                <span class="justify-content-center row m-0">Ojos negritos</span>
+            </div>
+        </div>
+        
+        <nav class="navbar navbar-expanded-lg" style="color: #80A6A2;">
+                <ul class="navbar w-100 justify-content-center gap-3" style="list-style: none;" >
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="nav-link" href="./servicios.html">Servicios</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="nav-link" href="#">Agenda tu cita</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="nav-link" href="./contacto.html">Contactanos</a>
+                    </li>
+                </ul>
+            </div>
+            
+        </nav>
+    </header>
+
+    <main>
+        <h2 class="text-center mb-3">Agenda tu cita en cualquiera de nuestras sucursales</h2>
+        <section class="w-100 d-flex flex-column align-items-center m-4">
+            <div class="w-50 ">
+                <form>
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input class="form-control" style="background-color: #d9d9d9; " type="text">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label" for="contacto">Contacto</label>
+                        <input class="form-control" style="background-color: #d9d9d9; " type="text">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label w-100" for="sucursal">Sucursal</label>
+                        <select style="background-color: #d9d9d9; " name="sucursal" class="form-select">
+                        <option value="1">Sucursal 1</option>
+                        <option value="2">Sucursal 2</option>
+                    </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="servicio" class="form-label">Servicio</label>
+                        <select name="servicios" style="background-color: #d9d9d9; " class="form-select" id="">
+                            <option value="1">Pestañas</option>
+                            <option value="2">Cejas</option>
+                            <option value="3">Hydra Lips Gloss</option>
+                            <option value="4">Micropigmentacion en ceja</option>
+                        </select>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <label class="form-label" for="fecha">Selecciona la fecha que deseas agendar</label>
+                        <input class="form-control" style="background-color: #d9d9d9; " type="date">
+                    </div>
+                    
+
+                    <div class="mb-4">
+                        <label for="horario" class="form-label">Selecciona el horario</label>
+                        <select class="form-select" style="background-color: #d9d9d9; " name="horario" id="">
+                        <option value="1">11:00 a 13:00</option>
+                        <option value="2">14:00 a 16:00</option>
+                        <option value="3">17:00 a 19:00</option>
+                    </select>
+                    </div>
+                    <button class="btn btn-secondary text-center" type="button">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-center pb-4 pt-4" style="background-color: #F2E5D5; color:#80A6A2">
+        <section>
+            <img src="../assets/img/1161953_instagram_icon.png" alt="instagram">
+            <img src="../assets/img/9034971_logo_facebook_icon.png" alt="facebook">
+        </section>
+        <section>
+            <ul class="d-flex flex-row justify-content-around" style="list-style: none;">
+                <li>Bolsa de trabajo</li>
+                <li>Facturacion</li>
+                <li>Aviso de privacidad</li>
+                <li>Términos y condiciones</li>
+            </ul>
+            <span>Ixtliltic 2024</span>
+        </section>
+    </footer>
+    
+</body>
+</html>
