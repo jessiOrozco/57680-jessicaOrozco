@@ -1,0 +1,70 @@
+@media(max-width: 450px) {
+
+    header nav ul{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grid-services{
+        grid-template-columns: 195px;
+        grid-row: 252px;
+    }
+    
+    footer .footer-container ul{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-form .contacto-form{
+        label{
+            font-size: map-get($tamanio-fuente,sm);
+        }
+        input{
+            height: 20px;
+        }
+
+        .checkbox-contacto{
+            label{
+                font-size: map-get($tamanio-fuente, sm )
+            }
+        }
+
+        button{
+            width: 100%;
+        }
+    }
+
+    .main-section .img-principal{
+        height: auto;
+        img {
+            height: 100%;
+        }
+    }
+
+    
+
+    .main-section .img-nosotros-principal{
+        height: auto;
+        img {
+            height: 100%;
+        }
+    }
+
+    .about-section{
+        height: auto;
+        padding: 10px;
+        img{
+            height: 100%;
+        }
+    }
+
+    .service-section .service-img{
+        flex-direction: column;
+        .card-services {
+            width: 90%;
+            margin-left: 2px;
+            margin-right: 2px;
+        }
+    }
+
+}

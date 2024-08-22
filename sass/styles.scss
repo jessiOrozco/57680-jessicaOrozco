@@ -1,0 +1,29 @@
+/* Utilities */
+@import "./utilities/maps";
+@import "./utilities/mixins";
+@import "./utilities/variables";
+
+/* Base */
+@import "./base/reset";
+@import "./base/fuentes";
+
+/* Layout */
+@import "./layout/header";
+@import "./layout/main";
+@import "./layout/footer";
+
+/* componentes */
+@import "./components/card";
+@import "./components/form";
+
+/* Media Query */
+
+@import "./layout/media/mediaDesktop";
+@import "./layout/media/mediaTablet";
+@import "./layout/media/mediaPhone";
+
+*{
+    font-family: "Itim", cursive;
+    font-weight: 400;
+    font-style: normal;
+}

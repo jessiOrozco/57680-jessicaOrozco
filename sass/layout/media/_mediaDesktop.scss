@@ -1,0 +1,103 @@
+@media(max-width: 1440px){
+    
+    header{
+        font-size: map-get($tamanio-fuente, $key: lg );
+    }
+
+    .contacto-main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    
+    .contacto-main h1{
+        font-size: 40px;
+        font-weight: bold;
+        color: #80A6A2;
+    }
+    
+    .contacto-main p{
+        width: 50%;
+        text-align: center;
+    }
+    
+    
+    .section-form{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .contacto-form{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+    
+    .contacto-form label{
+        font-size: 20px;
+    }
+    
+    .contacto-form input{
+        background-color: #d9d9d9;
+        height: 30px;
+        border: none;
+        border-radius: 2px 2px;
+    }
+    
+    .checkbox-contacto{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .contacto-form button{
+        width: 25%;
+        align-self: center;
+        background-color: #d9d9d9;
+        padding: 10px;
+        
+    }
+    
+    footer .contacto-footer{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+
+}
+
+@media(max-width: 1024px) {
+
+    header{
+        font-size: map-get($tamanio-fuente, $key: md );
+    }
+
+    .grid-services{
+        grid-template-columns: repeat(2,285px);
+        grid-template-rows: repeat(2, 406px);
+    }
+
+    .service-card article p{
+        font-size: 13px;
+    }
+
+    .contacto-main{
+        margin-top:10px;
+        margin-bottom: 5px;
+        .section-form{
+            margin-top: 0px;
+        }
+    }
+
+    footer .contacto-footer{
+        position:relative;
+    }
+
+}

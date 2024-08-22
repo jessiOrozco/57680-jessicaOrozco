@@ -1,0 +1,38 @@
+@media(max-width: 768px){
+    header{
+        font-size: map-get($tamanio-fuente, $key: sm );
+    }
+
+    .grid-services{
+        grid-template-columns: repeat(2, 285px);
+        grid-template-rows: repeat(2, 440px);
+    }
+
+    .contacto-footer{
+        position: inherit;
+    }
+
+    .contacto-form{
+        margin: 0;
+    }
+
+    .contacto-main{
+        font-size: 13px;
+        margin: 0;
+    }
+
+    .section-form{
+        margin: 0;
+    }
+    .contacto-form button{
+        
+        font-size: .625rem;
+        margin-bottom: 5px ;
+        padding: 5px;
+    }
+
+    .contacto-form label{
+        font-size: 13px;
+    }
+    
+}
