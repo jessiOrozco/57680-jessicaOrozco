@@ -82,16 +82,32 @@ header {
   font-size: 1.875rem; }
 
 .tracking-in-contract-bck-top {
-  animation: tracking-in-contract-bck-top 3s cubic-bezier(0.215, 0.61, 0.355, 1) both; }
+  -webkit-animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both; }
 
 @keyframes tracking-in-contract-bck-top {
   0% {
     letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-700px);
     transform: translateZ(-700px);
     opacity: 0; }
   40% {
     opacity: 0.6; }
   100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1; } }
+
+@keyframes tracking-in-expand-fwd {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-700px);
+    transform: translateZ(-700px);
+    opacity: 0; }
+  40% {
+    opacity: 0.6; }
+  100% {
+    -webkit-transform: translateZ(0);
     transform: translateZ(0);
     opacity: 1; } }
 
@@ -155,7 +171,8 @@ header {
     justify-content: space-around;
     gap: 20px;
     align-items: center;
-    margin-bottom: 1.5625rem; }
+    margin-bottom: 1.5625rem;
+    text-align: center; }
     .sucursal-section .direction img {
       height: 20px;
       width: 20px; }
@@ -195,6 +212,11 @@ header {
     width: 50%;
     text-align: center; }
 
+.anuncios {
+  font-size: 24px;
+  background-color: #80A6A2;
+  color: antiquewhite; }
+
 footer {
   width: 100%;
   padding-top: 10px;
@@ -224,11 +246,6 @@ footer {
       justify-content: space-around;
       font-size: 20px;
       list-style: none; }
-
-.contacto-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%; }
 
 /* componentes */
 .service-card {
@@ -333,11 +350,7 @@ footer {
     width: 25%;
     align-self: center;
     background-color: #d9d9d9;
-    padding: 10px; }
-  footer .contacto-footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%; } }
+    padding: 10px; } }
 
 @media (max-width: 1024px) {
   header {
@@ -351,9 +364,7 @@ footer {
     margin-top: 10px;
     margin-bottom: 5px; }
     .contacto-main .section-form {
-      margin-top: 0px; }
-  footer .contacto-footer {
-    position: relative; } }
+      margin-top: 0px; } }
 
 @media (max-width: 768px) {
   header {
@@ -375,7 +386,7 @@ footer {
     margin-bottom: 5px;
     padding: 5px; }
   .contacto-form label {
-    font-size: 13px; } }
+    font-size: 20px; } }
 
 @media (max-width: 450px) {
   header nav ul {
